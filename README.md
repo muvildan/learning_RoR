@@ -10,7 +10,7 @@ This course, created by Rob Percival and Mashrur Hossain, is designed to teach y
 
 Here's a list of the sections covered in the course. I'll be checking off each section as I complete it:
 
-- [ ] **Section 1: Introduction**
+- [x] **Section 1: Introduction**
   - Course Overview
   - Setting Up
 
