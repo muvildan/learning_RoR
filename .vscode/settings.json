@@ -1,0 +1,5 @@
+{
+    "editor.defaultFoldingRangeProvider": "rubocop.vscode-rubocop",
+    "editor.defaultFormatter": "rubocop.vscode-rubocop",
+    "editor.formatOnSave": true
+}
