@@ -30,9 +30,9 @@ puts "\n"
 my_details['Favcolor'] = ['Green, Blue']
 
 # Iterating over hashes
-puts "Iterating over the hash:"
-my_details.each {|key, value| puts "Key: #{key}, Value: #{value}"}
+puts 'Iterating over the hash:'
+my_details.each { |key, value| puts "Key: #{key}, Value: #{value}" }
 my_details.select do |key, value|
-    puts "Selecting the key-value pair with an array value: #{key} #{value}" if value.is_a?(Array)
+  puts "Selecting the key-value pair with an array value: #{key} #{value}" if value.is_a?(Array)
 end
 puts "\n"

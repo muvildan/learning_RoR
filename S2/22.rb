@@ -33,12 +33,12 @@ value = 0
 
 # < Less than
 100 < 100 # false
-100 < 101 # true 
+100 < 101 # true
 100 < 99 # false
 
 # <= Less or equal than
 100 <= 100 # true
-100 <= 101 # true 
+100 <= 101 # true
 100 <= 99 # false
 
 # Special scenarios

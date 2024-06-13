@@ -1,6 +1,6 @@
 # Simple calculator
 puts "Simple calculator"
-20.times {print "-"}
+20.times { print "-" }
 puts "\n"
 puts "Enter the first  number"
 num_1 = gets.chomp

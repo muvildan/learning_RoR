@@ -13,8 +13,8 @@ greeting = "Hello, World!" # def the variable
 puts greeting # puts the variable
 
 # Using a method
-def say_hello(thing_to_say) # def the method
-    puts thing_to_say
+def say_hello(thing_to_say)
+  puts thing_to_say
 end
 
 say_hello "Hello, World!" # calls the method passing a string as an argument

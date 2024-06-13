@@ -23,7 +23,7 @@ puts "Shuffled: #{y.to_a.shuffle}"
 print "\n"
 
 # Add elements to the array
-a << 10  # Let's add 10 to the array
+a << 10 # Let's add 10 to the array
 a.push(11) # Or we can add it like this
 a.append(12) # Or like this
 puts "10, 11 and 12 added to the array: #{a}"
@@ -57,7 +57,7 @@ print "\n"
 a.delete(10) # Cleanclean
 a.delete(11) # Cleanclean
 puts "Joining arrays with join: #{a.join}"
-puts "Joining arrays with join and a separator: #{a.join("-")}"
+puts "Joining arrays with join and a separator: #{a.join('-')}"
 
 # Joining different arrays
 b = [1, 2, 3]
@@ -67,8 +67,8 @@ puts "Joining arrays with the method concat: #{b.concat(c)}"
 print "\n"
 
 # Splitting arrays
-puts "Splitting a string: #{"I am a string".split}"
-puts "Splitting the string I-am-a-string with a separator split('-'')): #{"I-am-a-string".split("-")}"
+puts "Splitting a string: #{'I am a string'.split}"
+puts "Splitting the string I-am-a-string with a separator split('-'')): #{'I-am-a-string'.split('-')}"
 puts "\n"
 
 # Iterators
