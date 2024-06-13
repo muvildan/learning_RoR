@@ -1,0 +1,9 @@
+# .rubocop.yml
+
+# Disable the rule that prefers single quotes over double quotes
+Style/StringLiterals:
+  Enabled: false
+
+# Disable the rule that requires the frozen string literal comment
+Style/FrozenStringLiteralComment:
+  Enabled: false
