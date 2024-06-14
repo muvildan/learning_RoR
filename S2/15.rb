@@ -48,5 +48,6 @@ puts new_first_name # Outputs "Daniel" as it was assigned the value of first_nam
 # Escaping
 'The new first name is #{new_first_name}' # This should not work, but if we print it, it'll output "The new first name is \#{new_first_name}". This is escaping
 "The new first name is \#{new_first_name}" # This means we can use \ to escape special characters, like interpolation, by adding \ before the special character
-'Daniel asked 'Hey Dani, how are you doing?'' # This will not work. We're using single quotes inside single quotes
+# 'Daniel asked 'Hey Dani, how are you doing?'' # This will not work. We're using single quotes inside single quotes
+
 'Daniel asked \'Hey Dani, how are you doing?\'' # This, though, will work because we're escaping the single quotes right before they are interpreted by Ruby
