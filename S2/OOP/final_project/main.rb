@@ -1,22 +1,15 @@
-# Use case for students class - Authentication systems in web applications
-# For now think of students as users
-# Done with usernames and passwords
-# Security for users information is very important
-# Passwwords are virtually never stored in their string forms
-# Hashed digests are stored in the db's
-# A popular hashing algorithm is MD5 - bcrypt
-# Creates a hash digest of the string
+require_relative "crud" # if the file is in the same directory, we need to use the relative path
 
-require 'bcrypt'
+# $LOAD_PATH << "." # if we don't want the previous, we can load the path like so
+# require "crud" # and then require de file with just require
 
-my_password = BCrypt::Password.create("my password")
-puts my_password
+users = [
+  { username: "daniel", password: "password1" },
+  { username: "jack", password: "password2" },
+  { username: "arya", password: "password3" },
+  { username: "jonshow", password: "password4" },
+  { username: "heisenberg", password: "password5" }
+]
 
-# puts my_password.version              #=> "2a"
-# puts my_password.cost                 #=> 12
-# puts my_password == "my password"     #=> true
-# puts my_password == "not my password" #=> false
-
-my_password = BCrypt::Password.new("$2a$12$GyDoyCebvfrzdDTqB67I8.rdARj6pOQGA.Gpyt2.pAo6cCN1amlBS")
-puts my_password == "my password" #=> true
-puts my_password == "not my password" #=> false
+hashed_users = Crud.create_secure_users(users)
+puts hashed_users
