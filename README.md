@@ -14,7 +14,7 @@ Here's a list of the sections covered in the course. I'll be checking off each s
   - Course Overview
   - Setting Up
 
-- [ ] **Section 2: Ruby Primer**
+- [x] **Section 2: Ruby Primer**
   - Introduction to Ruby
   - Variables, Data Types, and Methods
   - Control Flow
