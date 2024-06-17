@@ -7,7 +7,7 @@ module Crud
   #
   # @param password [String] The password to be encrypted.
   # @return [String] The encrypted password.
-  def self.create_hash_digest(password)
+  def create_hash_digest(password)
     BCrypt::Password.create(password)
   end
 
@@ -15,7 +15,7 @@ module Crud
   #
   # @param password [String] The password to be verified.
   # @return [BCrypt::Password] The bcrypt password object.
-  def self.verify_hash_digest(password)
+  def verify_hash_digest(password)
     BCrypt::Password.new(password)
   end
 
@@ -23,7 +23,7 @@ module Crud
   #
   # @param users [Array<Hash>] An array of user hashes with :username and :password keys.
   # @return [Array<Hash>] An array of user hashes with encrypted passwords.
-  def self.create_secure_users(users)
+  def create_secure_users(users)
     users.each do |user|
       user[:password] = create_hash_digest(user[:password])
     end
@@ -36,7 +36,7 @@ module Crud
   # @param password [String] The password to be authenticated.
   # @param users [Array<Hash>] An array of user hashes with :username and :password keys.
   # @return [Hash, String] The authenticated user hash if the credentials are correct, or an error message if not.
-  def self.authenticate_user(username, password, users)
+  def authenticate_user(username, password, users)
     users.each do |user|
       return user if user[:username] == username && verify_hash_digest(user[:password]) == password
     end
